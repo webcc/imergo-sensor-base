@@ -1,0 +1,28 @@
+{
+    "name": "imergo-sensor-base",
+    "description": "Node module with some extensions to the Generic Sensor API from W3C.",
+    "version": "0.1.1",
+    "author": {
+        "name": "Web Compliance Center",
+        "email": "webcc@fit.fraunhofer.de"
+    },
+    "dependencies": {
+        "imergo-generic-sensor-api": "webcc/imergo-generic-sensor-api#dev",
+        "imergo-om-base": "webcc/imergo-om-base#dev"
+    },
+    "devDependencies": {
+        "mocha": "*"
+    },
+    "main": "index",
+    "license": "Apache-2.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/webcc/imergo-sensor-base.git"
+    },
+    "engines": {
+        "node": ">=6.9.1"
+    },
+    "scripts": {
+        "test": "mocha -R spec -t 15000 test/*"
+    }
+}
