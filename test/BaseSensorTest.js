@@ -1,14 +1,12 @@
 "use strict";
-const assert = require("assert");
-const model = require("..");
-describe("imergo-sensor-base", () =>
+
+describe("imergo-sensor-base::BaseSensor", () =>
 {
-    describe("#BaseSensor", () =>
+    const assert = require("assert");
+    const model = require("..");
+    it("should init a sensor", () =>
     {
-        it("should init a sensor", () =>
-        {
-            let sensor = new model.BaseSensor();
-            assert.equal(sensor instanceof model.BaseSensor, true);
-        });
+        const sensor = new model.BaseSensor();
+        assert.strictEqual(sensor instanceof model.BaseSensor, true);
     });
 });

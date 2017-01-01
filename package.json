@@ -8,7 +8,7 @@
     },
     "dependencies": {
         "imergo-generic-sensor-api": "webcc/imergo-generic-sensor-api#dev",
-        "imergo-om-base": "webcc/imergo-om-base#dev"
+        "imergo-om-base": "4.1.1"
     },
     "devDependencies": {
         "mocha": "*"
@@ -20,7 +20,7 @@
         "url": "https://github.com/webcc/imergo-sensor-base.git"
     },
     "engines": {
-        "node": ">=6.9.1"
+        "node": ">=6.9.2"
     },
     "scripts": {
         "test": "mocha -R spec -t 15000 test/*"
