@@ -5,7 +5,7 @@ imergo-sensor-base
 
 Node module with some extensions to the
 [Generic Sensor API][generic-sensor-api] from [W3C][w3c].
-(See generic implementation at: [imergo-generic-sensor-api][imergo-generic-sensor-api])
+(See reference implementation at: [imergo-generic-sensor-api][imergo-generic-sensor-api])
 
 ## Install
 
