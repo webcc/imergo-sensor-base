@@ -9,15 +9,15 @@ describe("imergo-sensor-base::BaseSensorReading", () =>
         const date = new Date();
         date.setDate(date.getDate() - 300);
         const day = date.getDate();
-        const month = date.getMonth();
+        const month = date.getMonth() + 1;
         const year = date.getFullYear();
         const sensorReading = new model.BaseSensorReading({
             timestamp: date.getTime()
         });
         assert.strictEqual(sensorReading instanceof model.BaseSensorReading, true);
-        assert.equal(sensorReading.timestamp, date.getTime());
-        assert.equal(sensorReading.day, day);
-        assert.equal(sensorReading.month, month);
-        assert.equal(sensorReading.year, year);
+        assert.strictEqual(sensorReading.timestamp, date.getTime());
+        assert.strictEqual(sensorReading.day, day);
+        assert.strictEqual(sensorReading.month, month);
+        assert.strictEqual(sensorReading.year, year);
     });
 });
